@@ -5,7 +5,7 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2511.xxxxx-b31b1b.svg)](https://arxiv.org/abs/2511.xxxxx) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 <p align="center">
-  <img src="media/MAP_LOGO.jpg" width="800" alt="MAP Protocol Visualization">
+  <img src="static/images/MAP_LOGO.png" width="800" alt="MAP Protocol Visualization">
 </p>
 
 ## 🌌 Overview
@@ -23,14 +23,14 @@ By modeling reasoning as potential-driven flows on high-dimensional Riemannian m
 Using prompt-annealing on open-weights LLMs (Llama-3, Qwen), we observe that reasoning trajectories naturally converge into shared attractor basins, validating the MAP convergence hypothesis.
 
 <p align="center">
-  <img src="media/convergence_dual_model.png" width="800" alt="Geometric Convergence of Llama-3 and Qwen">
+  <img src="static/images/MAP_PCA.png" width="800" alt="Geometric Convergence of Llama-3 and Qwen">
 </p>
 
 ### 2. Topological Safety Signatures
 MAP reveals the hidden geometry of AI safety. **Rigid Mode** (hard refusal) creates sharp curvature spikes (collisions), while **Adaptive Mode** (guidance) maintains smooth geodesic flow.
 
 <p align="center">
-  <img src="media/safety_plot.png" width="800" alt="Safety Curvature Analysis">
+  <img src="static/images/MAP_SECURE.png" width="800" alt="Safety Curvature Analysis">
 </p>
 
 ## 🏗️ Architecture
