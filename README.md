@@ -49,8 +49,21 @@ MAP is a theoretical framework for visualization and alignment analysis. It is *
 
 Please review our full **[Ethical Use & Safety Disclaimer](ETHICS.md)** before using or extending this protocol.
 
-## 📧 Contact & Data
-The reference implementation scripts and processed trajectory data are available upon reasonable request. Please contact the author at [d232901@st.tohtech.ac.jp].
+## 🧪 Reproducibility & Code
+
+To facilitate immediate verification of the geometric convergence and safety topology results (Figures 2 & 4), we have open-sourced the reference implementation scripts in a dedicated repository:
+
+👉 **[Get the Reproduction Scripts Here](https://github.com/JBKing514/map_script/tree/main)**
+
+*This repository contains the exact Python scripts (PyTorch/Transformers) used to extract hidden states and compute geometric curvature.*
+
+## 📧 Contact
+
+For processed trajectory data, theoretical discussions, or collaboration inquiries regarding the Manifold Alignment Protocol, please contact the author directly:
+
+**Yunchong Tang**
+*Faculty of Engineering, Tohoku Institute of Technology*
+Email: `d232901@st.tohtech.ac.jp`
 
 ## 📚 Citation
 
