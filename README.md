@@ -49,13 +49,41 @@ MAP is a theoretical framework for visualization and alignment analysis. It is *
 
 Please review our full **[Ethical Use & Safety Disclaimer](ETHICS.md)** before using or extending this protocol.
 
-## 🧪 Reproducibility & Code
+## 💻 Quick Start: Run the Experiment
 
-To facilitate immediate verification of the geometric convergence and safety topology results (Figures 3 & 5), we have open-sourced the reference implementation scripts in a dedicated repository:
+We provide the exact Python scripts used to generate the figures above. You can reproduce these results on a single consumer GPU (e.g., RTX 3090/4090/5090), CPU will also run slowly.
+The reproduction python script is in `experiments` folder.
 
-👉 **[Get the Reproduction Scripts Here](https://github.com/JBKing514/map_script/tree/main)**
+### Prerequisites
+```bash
+pip install -r requirements.txt
+```
 
-*This repository contains the exact Python scripts (PyTorch/Transformers) used to extract hidden states and compute geometric curvature.*
+### 1. Reproduce Convergence Plot (Figure 2)
+This script downloads Llama-3 and Qwen models, extracts hidden states for "Justice" prompts, and visualizes the trajectory convergence using PCA.
+```bash
+python exp_convergence.py
+```
+*Output: `convergence_dual_model.png`*
+
+### 2. Reproduce Safety Topology Plot (Figure 4)
+This script simulates "Rigid" vs. "Adaptive" safety system prompts and measures the geometric curvature of the reasoning path under an adversarial prompt.
+```bash
+python exp_convergence.py
+```
+*Output: `safety_plot.png`*
+
+> **Note:** These scripts are provided as a static reference implementation to support the paper's findings.They are released "as-is" and are not intended for production use. Model weights are downloaded automatically from Hugging Face (using non-gated versions where possible).
+
+---
+
+## 📂 Classified Archives (Lore)
+
+> *Access restricted to Bridges Personnel / Level 9 Clearance.*
+
+For those interested in the theoretical intersections between MAP and the **Chiral Network physics** described in *Death Stranding*, we have declassified the following files:
+
+* **[ENTER THE ARCHIVES](ds_map/ds.html)**
 
 ## 📧 Contact
 
