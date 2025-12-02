@@ -51,8 +51,7 @@ Please review our full **[Ethical Use & Safety Disclaimer](ETHICS.md)** before u
 
 ## 💻 Quick Start: Run the Experiment
 
-We provide the exact Python scripts used to generate the figures above. You can reproduce these results on a single consumer GPU (e.g., RTX 3090/4090/5090), CPU will also run slowly.
-The reproduction python script is in `experiments` folder.
+We provide the exact Python scripts in `experiments` folder which used to generate the figures above. You can reproduce these results on a single consumer GPU (e.g., RTX 3090/4090/5090), CPU-only will also work but slower.
 
 ### Prerequisites
 ```bash
@@ -90,6 +89,7 @@ For those interested in the theoretical intersections between MAP and the **Chir
 For processed trajectory data, theoretical discussions, or collaboration inquiries regarding the Manifold Alignment Protocol, please contact the author directly:
 
 **Yunchong Tang**
+
 *Faculty of Engineering, Tohoku Institute of Technology*
 
 Email: `d232901@st.tohtech.ac.jp`
