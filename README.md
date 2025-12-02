@@ -51,7 +51,7 @@ Please review our full **[Ethical Use & Safety Disclaimer](ETHICS.md)** before u
 
 ## 🧪 Reproducibility & Code
 
-To facilitate immediate verification of the geometric convergence and safety topology results (Figures 2 & 4), we have open-sourced the reference implementation scripts in a dedicated repository:
+To facilitate immediate verification of the geometric convergence and safety topology results (Figures 3 & 5), we have open-sourced the reference implementation scripts in a dedicated repository:
 
 👉 **[Get the Reproduction Scripts Here](https://github.com/JBKing514/map_script/tree/main)**
 
@@ -63,6 +63,7 @@ For processed trajectory data, theoretical discussions, or collaboration inquiri
 
 **Yunchong Tang**
 *Faculty of Engineering, Tohoku Institute of Technology*
+
 Email: `d232901@st.tohtech.ac.jp`
 
 ## 📚 Citation
