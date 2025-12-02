@@ -58,14 +58,14 @@ We provide the exact Python scripts in `experiments` folder which used to genera
 pip install -r requirements.txt
 ```
 
-### 1. Reproduce Convergence Plot (Figure 2)
+### 1. Reproduce Convergence Plot (Figure 3)
 This script downloads Llama-3 and Qwen models, extracts hidden states for "Justice" prompts, and visualizes the trajectory convergence using PCA.
 ```bash
 python exp_convergence.py
 ```
 *Output: `convergence_dual_model.png`*
 
-### 2. Reproduce Safety Topology Plot (Figure 4)
+### 2. Reproduce Safety Topology Plot (Figure 5)
 This script simulates "Rigid" vs. "Adaptive" safety system prompts and measures the geometric curvature of the reasoning path under an adversarial prompt.
 ```bash
 python exp_convergence.py
