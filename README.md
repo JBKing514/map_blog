@@ -59,7 +59,7 @@ If you use MAP in your research, please cite:
 ```bibtex
 @article{tang2025map,
   title={The Manifold Alignment Protocol (MAP): A Self-Iterable Geometric Framework for Cross-System Cognitive Convergence},
-  author={Tang Yunchong},
+  author={Tang, Yunchong},
   journal={arXiv preprint arXiv:2511.xxxxx},
   year={2025}
 }
