@@ -34,6 +34,13 @@ MAP reveals the hidden geometry of AI safety: **Adaptive Mode**(guidance) shows 
   <img src="static/images/MAP_SECURE.png" width="800" alt="Safety Curvature Analysis">
 </p>
 
+### 3. Architecture Analysis: The "Thinking Style"(Coming in v2)
+MAP metric $\Delta A$ reveals distinct cognitive styles. Llama-3 discriminates semantics early (Layer 5), while Qwen-2.5 maintains a high-abstraction 'superposition' state until deep layers (Layer 20), correlating with its reasoning-heavy architecture.
+
+<p align="center">
+  <img src="static/images/MAP_ALINE.png" width="800" alt="Safety Curvature Analysis">
+</p>
+
 ## 🏗️ Architecture
 
 MAP is designed as a four-layer protocol stack:
@@ -72,6 +79,15 @@ This script simulates "Rigid" vs. "Adaptive" safety system prompts and measures 
 python exp_convergence.py
 ```
 *Output: `safety_plot.png`*
+
+### 3. Architecture Analysis: Semantic Folding (Coming in v2)
+This script quantifies the **Layer-wise Alignment Score ($A$)** to visualize how different architectures compress meaning.
+* It compares "Tight" (paraphrased) vs. "Sparse" (random) semantic clusters.
+* **Key Insight:** It reveals that Qwen-2.5 exhibits **"Delayed Folding"** (maintaining high-dimensional superposition until deep layers), whereas Llama-3 collapses semantics early.
+```bash
+python exp_alignment.py
+```
+*Output: `alignment_delta_profile.png`*
 
 > **Note:** These scripts are provided as a static reference implementation to support the paper's findings.They are released "as-is" and are not intended for production use. Model weights are downloaded automatically from Hugging Face (using non-gated versions where possible).
 
