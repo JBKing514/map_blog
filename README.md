@@ -28,7 +28,7 @@ Using prompt-annealing on open-weights LLMs (Llama-3, Qwen), we observe that rea
 </p>
 
 ### 2. Topological Safety Signatures
-MAP reveals the hidden geometry of AI safety. **Rigid Mode** (hard refusal) creates sharp curvature spikes (collisions), while **Adaptive Mode** (guidance) maintains smooth geodesic flow.
+MAP reveals the hidden geometry of AI safety: **Adaptive Mode**(guidance) shows a stable U-turn that redirects the reasoning path away from danger, while **Rigid Mode**(hard refusal) exhibits an inelastic crash into a boundary and ends immediately.
 
 <p align="center">
   <img src="static/images/MAP_SECURE.png" width="800" alt="Safety Curvature Analysis">
