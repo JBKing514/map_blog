@@ -2,7 +2,8 @@
 
 ### A Self-Iterable Geometric Framework for Cross-System Cognitive Convergence
 
-[![arXiv](https://img.shields.io/badge/arXiv-2511.xxxxx-b31b1b.svg)](https://arxiv.org/abs/2511.xxxxx) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![arXiv](https://img.shields.io/badge/arXiv-2511.xxxxx-b31b1b.svg)](https://arxiv.org/abs/2511.xxxxx) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)[![Toolkit](https://img.shields.io/badge/MAP%20Toolkit-v0.1-blue)](https://github.com/JBKing514/map_llm_toolkit)
+
 
 <p align="center">
   <img src="static/images/MAP_LOGO.png" width="800" alt="MAP Protocol Visualization">
@@ -86,7 +87,7 @@ This toolkit provides:
 
 If you are interested in exploring MAP further—or would like to contribute to the growing MAP ecosystem—please visit the official toolkit repository:
 
-👉 **https://github.com/YOUR_USERNAME/map-llm-toolkit**
+👉 **https://github.com/JBKing514/map_llm_toolkit**
 
 Contributions of any form (features, experiments, visualization modules, discussions) are highly appreciated.
 
