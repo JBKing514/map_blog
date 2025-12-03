@@ -98,6 +98,7 @@ To support the broader MAP ecosystem, the experimental scripts used in this pape
 This toolkit provides:
 - Hidden-state extraction utilities  
 - PCA projection and trajectory visualization  
+- Semantic Alignment through layer-wise alignment metrics
 - Safety topology analysis (rigid vs. adaptive modes)  
 - Reproducible examples for extending MAP-based experiments  
 
