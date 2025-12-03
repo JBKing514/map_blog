@@ -74,6 +74,23 @@ python exp_convergence.py
 
 > **Note:** These scripts are provided as a static reference implementation to support the paper's findings.They are released "as-is" and are not intended for production use. Model weights are downloaded automatically from Hugging Face (using non-gated versions where possible).
 
+## 🔧 MAP Ecosystem: Official Python Toolkit
+
+To support the broader MAP ecosystem, the experimental scripts used in this paper have been packaged into a clean and modular Python API: **MAP-LLM-Toolkit**.
+
+This toolkit provides:
+- Hidden-state extraction utilities  
+- PCA projection and trajectory visualization  
+- Safety topology analysis (rigid vs. adaptive modes)  
+- Reproducible examples for extending MAP-based experiments  
+
+If you are interested in exploring MAP further—or would like to contribute to the growing MAP ecosystem—please visit the official toolkit repository:
+
+👉 **https://github.com/YOUR_USERNAME/map-llm-toolkit**
+
+Contributions of any form (features, experiments, visualization modules, discussions) are highly appreciated.
+
+
 ---
 
 ## 📂 Classified Archives (Lore)
