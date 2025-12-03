@@ -2,7 +2,7 @@
 
 ### A Self-Iterable Geometric Framework for Cross-System Cognitive Convergence
 
-[![arXiv](https://img.shields.io/badge/arXiv-2511.xxxxx-b31b1b.svg)](https://arxiv.org/abs/2511.xxxxx) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)[![Toolkit](https://img.shields.io/badge/MAP%20Toolkit-v0.1-blue)](https://github.com/JBKing514/map_llm_toolkit)
+[![arXiv](https://img.shields.io/badge/arXiv-2511.xxxxx-b31b1b.svg)](https://arxiv.org/abs/2511.xxxxx) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Toolkit](https://img.shields.io/badge/MAP%20Toolkit-v0.1-blue)](https://github.com/JBKing514/map_llm_toolkit)
 
 
 <p align="center">
