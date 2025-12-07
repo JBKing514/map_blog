@@ -121,7 +121,7 @@ This custom node translates MAP principles into a practical engineering tool:
 - **Differential Tuning:** Auto-detects improvement or regression ($\Delta Q$) when modifying prompts.
 - **Auto-Tuner:** An automated optimization engine (Hill Climbing) that finds the optimal Step/CFG settings to save compute.
 
-👉 **Repository: [MAP-ComfyUI](https://github.com/JBKing514/map_comfyui)**
+👉 **Repository: [map_comfyui](https://github.com/JBKing514/map_comfyui)**
 
 Contributions of any form (features, experiments, visualization modules, discussions) are highly appreciated.
 
