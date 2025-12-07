@@ -112,7 +112,7 @@ This toolkit provides:
 
 👉 **Repository: [map_llm_toolkit](https://github.com/JBKing514/map_llm_toolkit)**
 
-### 2. For Diffusion Models: ComfyUI-MAP-Probe
+### 2. For Diffusion Models: MAP-ComfyUI
 To validate MAP's applicability to continuous latent dynamics, we developed a geometric "Vector Network Analyzer" for Stable Diffusion workflows.
 
 This custom node translates MAP principles into a practical engineering tool:
