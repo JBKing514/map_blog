@@ -119,6 +119,8 @@ To validate MAP's applicability to continuous latent dynamics, we developed a ge
 **Why use this?** It turns "Prompt Engineering" into "Prompt Engineering" (literally).
 Instead of guessing CFG/Steps, let the geometry decide.
 
+⚠️ **Note:** This custom node is an engineering adaptation inspired by the MAP framework. While the core philosophy (trajectory convergence & stability) remains central, the mathematical metrics (e.g., Q-Score) are heuristic approximations designed for real-time creative workflows, rather than strict differential geometry implementations found in the main paper.
+
 This custom node suite translates MAP principles into a practical engineering tool:
 * **Latent Trajectory Plotting:** Visualizes the "geometry of generation" in real-time. See if your prompt is "struggling" or "converging".
 * **Convergence Metrics (Q-Score):** A mathematically derived quality score based on attractor stability.
