@@ -124,7 +124,7 @@ Instead of guessing CFG/Steps, let the geometry decide.
 This custom node suite translates MAP principles into a practical engineering tool:
 * **Latent Trajectory Plotting:** Visualizes the "geometry of generation" in real-time. See if your prompt is "struggling" or "converging".
 * **Convergence Metrics (Q-Score):** A mathematically derived quality score based on attractor stability.
-* **Auto-Tuner (GPU Saver):** An automated optimization engine (Hill Climbing) that finds the **optimal** Step/CFG settings. **Stop wasting compute on over-baking images.**
+* **Auto-Tuner (GPU Saver):** An automated optimization engine (Hill Climbing) that finds the **optimal** Step/CFG/Schechuler settings. **Stop wasting compute on over-baking images.**
 
 👉 **Repository: [map_comfyui](https://github.com/JBKing514/map_comfyui)**
 
