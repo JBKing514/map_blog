@@ -2,7 +2,7 @@
 
 ### A Self-Iterable Geometric Framework for Cross-System Cognitive Convergence
 
-[![arXiv](https://img.shields.io/badge/arXiv-2511.xxxxx-b31b1b.svg)](https://arxiv.org/abs/2511.xxxxx) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Toolkit](https://img.shields.io/badge/MAP%20Toolkit-v0.1-blue)](https://github.com/JBKing514/map_llm_toolkit)
+[![arXiv](https://img.shields.io/badge/arXiv-2511.xxxxx-b31b1b.svg)](https://arxiv.org/abs/2511.xxxxx) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Toolkit](https://img.shields.io/badge/MAP%20LLM%20Toolkit-v0.1-blue)](https://github.com/JBKing514/map_llm_toolkit) [![Toolkit](https://img.shields.io/badge/MAP%20ComfyUI-v0.1-blue)](https://github.com/JBKing514/map_comfyui)
 
 
 <p align="center">
@@ -96,9 +96,12 @@ python exp_alignment.py
 
 > **Note:** These scripts are provided as a static reference implementation to support the paper's findings.They are released "as-is" and are not intended for production use. Model weights are downloaded automatically from Hugging Face (using non-gated versions where possible).
 
-## 🔧 MAP Ecosystem: Official Python Toolkit
+## 🔧 MAP Ecosystem: Official Implementations
 
-To support the broader MAP ecosystem, the experimental scripts used in this paper have been packaged into a clean and modular Python API: **MAP-LLM-Toolkit**.
+To demonstrate the universality of the Manifold Alignment Protocol across different cognitive substrates (LLMs vs. Diffusion), we provide two official toolkits:
+
+### 1. For Language Models: MAP-LLM-Toolkit
+The experimental scripts used in this paper have been packaged into a clean and modular Python API.
 
 This toolkit provides:
 - Hidden-state extraction utilities  
@@ -107,12 +110,20 @@ This toolkit provides:
 - Safety topology analysis (rigid vs. adaptive modes)  
 - Reproducible examples for extending MAP-based experiments  
 
-If you are interested in exploring MAP further—or would like to contribute to the growing MAP ecosystem—please visit the official toolkit repository:
+👉 **Repository: [map_llm_toolkit](https://github.com/JBKing514/map_llm_toolkit)**
 
-👉 **https://github.com/JBKing514/map_llm_toolkit**
+### 2. For Diffusion Models: ComfyUI-MAP-Probe
+To validate MAP's applicability to continuous latent dynamics, we developed a geometric "Vector Network Analyzer" for Stable Diffusion workflows.
+
+This custom node translates MAP principles into a practical engineering tool:
+- **Latent Trajectory Plotting:** Visualizes the "geometry of generation" in real-time.
+- **Convergence Metrics (Q-Score):** Quantifies generation quality based on manifold penetration depth and attractor stability.
+- **Differential Tuning:** Auto-detects improvement or regression ($\Delta Q$) when modifying prompts.
+- **Auto-Tuner:** An automated optimization engine (Hill Climbing) that finds the optimal Step/CFG settings to save compute.
+
+👉 **Repository: [ComfyUI-MAP-Probe](https://github.com/JBKing514/ComfyUI-MAP-Probe)**
 
 Contributions of any form (features, experiments, visualization modules, discussions) are highly appreciated.
-
 
 ---
 
