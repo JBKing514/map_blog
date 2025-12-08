@@ -119,7 +119,7 @@ To validate MAP's applicability to continuous latent dynamics, we developed a ge
 **Why use this?** It turns "Prompt Engineering" into "Prompt Engineering" (literally).
 Instead of guessing CFG/Steps, let the geometry decide.
 
-⚠️ **Note:** This custom node is an engineering adaptation inspired by the MAP framework. While the core philosophy (trajectory convergence & stability) remains central, the mathematical metrics (e.g., Q-Score) are heuristic approximations designed for real-time creative workflows, rather than strict differential geometry implementations found in the main paper.
+⚠️ **Note on Mathematical Approximation:** This node implements a performance-optimized variant of the MAP framework designed for real-time interaction. While the original MAP theory utilizes Riemannian geometry for precise manifold analysis, this tool employs Euclidean approximations and Random Projections to ensure zero-latency feedback during image generation. This demonstrates the modularity of the MAP protocol: the Substrate Layer (L1) can be swapped for speed without compromising the utility of the Protocol Layer (L3) alignment metrics.
 
 This custom node suite translates MAP principles into a practical engineering tool:
 * **Latent Trajectory Plotting:** Visualizes the "geometry of generation" in real-time. See if your prompt is "struggling" or "converging".
