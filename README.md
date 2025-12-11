@@ -79,14 +79,7 @@ python exp_convergence.py
 ```
 *Output: `convergence_dual_model.png`*
 
-### 2. Reproduce Safety Topology Plot (Figure 5)
-This script simulates "Rigid" vs. "Adaptive" safety system prompts and measures the geometric curvature of the reasoning path under an adversarial prompt.
-```bash
-python exp_convergence.py
-```
-*Output: `safety_plot.png`*
-
-### 3. Architecture Analysis: Semantic Folding (Coming in v2)
+### 2. Architecture Analysis: Semantic Folding (Figure 4)
 This script quantifies the **Layer-wise Alignment Score ($A$)** to visualize how different architectures compress meaning.
 * It compares "Tight" (paraphrased) vs. "Sparse" (random) semantic clusters.
 * **Key Insight:** It reveals that Qwen-2.5 exhibits **"Delayed Folding"** (maintaining high-dimensional superposition until deep layers), whereas Llama-3 collapses semantics early.
@@ -94,6 +87,13 @@ This script quantifies the **Layer-wise Alignment Score ($A$)** to visualize how
 python exp_alignment.py
 ```
 *Output: `alignment_delta_profile.png`*
+
+### 3. Reproduce Safety Topology Plot (Figure 5)
+This script simulates "Rigid" vs. "Adaptive" safety system prompts and measures the geometric curvature of the reasoning path under an adversarial prompt.
+```bash
+python exp_convergence.py
+```
+*Output: `safety_plot.png`*
 
 > **Note:** These scripts are provided as a static reference implementation to support the paper's findings.They are released "as-is" and are not intended for production use. Model weights are downloaded automatically from Hugging Face (using non-gated versions where possible).
 
@@ -151,8 +151,15 @@ For processed trajectory data, theoretical discussions, or collaboration inquiri
 
 Email: `d232901@st.tohtech.ac.jp`
 
-## Citation
-
-If you use MAP or the MAP Toolkit, please cite:
-
-Tang, Y. (2025). *The Manifold Alignment Protocol (MAP): A Self-Iterable Geometric Framework for Cross-System Cognitive Convergence*. Zenodo. https://doi.org/10.5281/zenodo.17900444
+ ## Citation
+ If you use MAP or its toolkits in your research, please cite:
+ ```bibtex
+@article{tang2025map,
+  title={The Manifold Alignment Protocol (MAP): A Self-Iterable Geometric Framework for Cross-System Cognitive Convergence},
+  author={Tang, Yunchong},
+  journal={Zenodo},
+  year={2025},
+  doi={10.5281/zenodo.17900444},
+  url={https://doi.org/10.5281/zenodo.17900444}
+}
+ ```
