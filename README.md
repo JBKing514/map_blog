@@ -88,6 +88,7 @@ python exp_alignment.py
 ```
 *Output: `alignment_delta_profile.png`*
 
+
 ### 3. Reproduce Safety Topology Plot (Figure 5)
 This script simulates "Rigid" vs. "Adaptive" safety system prompts and measures the geometric curvature of the reasoning path under an adversarial prompt.
 ```bash
