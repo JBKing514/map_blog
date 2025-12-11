@@ -140,7 +140,7 @@ Contributions of any form (features, experiments, visualization modules, discuss
 
 For those interested in the theoretical intersections between MAP and the **Chiral Network physics** described in *Death Stranding*, we have declassified the following files:
 
-* **[ENTER THE ARCHIVES](ds_map/ds.html)**
+* **[ENTER THE ARCHIVES](https://jbking514.github.io/map_blog/ds_map/ds.html)**
 
 ## 📧 Contact
 
