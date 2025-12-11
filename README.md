@@ -150,3 +150,9 @@ For processed trajectory data, theoretical discussions, or collaboration inquiri
 *Faculty of Engineering, Tohoku Institute of Technology*
 
 Email: `d232901@st.tohtech.ac.jp`
+
+## Citation
+
+If you use MAP or the MAP Toolkit, please cite:
+
+Tang, Y. (2025). *The Manifold Alignment Protocol (MAP): A Self-Iterable Geometric Framework for Cross-System Cognitive Convergence*. Zenodo. https://doi.org/10.5281/zenodo.17900444
