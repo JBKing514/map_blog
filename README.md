@@ -2,7 +2,8 @@
 
 ### A Self-Iterable Geometric Framework for Cross-System Cognitive Convergence
 
-[![arXiv](https://img.shields.io/badge/arXiv-2511.xxxxx-b31b1b.svg)](https://arxiv.org/abs/2511.xxxxx) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Toolkit](https://img.shields.io/badge/MAP%20LLM%20Toolkit-v0.1-blue)](https://github.com/JBKing514/map_llm_toolkit) [![Toolkit](https://img.shields.io/badge/MAP%20ComfyUI-v0.2-blue)](https://github.com/JBKing514/map_comfyui)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17900444.svg)](https://doi.org/10.5281/zenodo.17900444) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Toolkit](https://img.shields.io/badge/MAP%20LLM%20Toolkit-v0.1-blue)](https://github.com/JBKing514/map_llm_toolkit) [![Toolkit](https://img.shields.io/badge/MAP%20ComfyUI-v0.2-blue)](https://github.com/JBKing514/map_comfyui)
 
 
 <p align="center">
@@ -149,15 +150,3 @@ For processed trajectory data, theoretical discussions, or collaboration inquiri
 *Faculty of Engineering, Tohoku Institute of Technology*
 
 Email: `d232901@st.tohtech.ac.jp`
-
-## 📚 Citation
-
-If you use MAP in your research, please cite:
-
-```bibtex
-@article{tang2025map,
-  title={The Manifold Alignment Protocol (MAP): A Self-Iterable Geometric Framework for Cross-System Cognitive Convergence},
-  author={Tang, Yunchong},
-  journal={arXiv preprint arXiv:2511.xxxxx},
-  year={2025}
-}
