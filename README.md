@@ -62,7 +62,17 @@ This separation enables **self-iterability**: the underlying math can evolve wit
 
 ## 🧪 Reference Experiments
 
-This repository provides **reference scripts** used to validate MAP concepts in practice.
+We provide the Python scripts in `experiments` folder to validate the MAP's concept. You can reproduce these results on a single consumer GPU (e.g., RTX 3090/4090/5090), CPU-only will also work but slower.
+
+**Note:**
+This project installs the CPU version of PyTorch by default.
+If you want to run the experiments on GPU, please manually install a CUDA-enabled build of PyTorch that matches your CUDA version (e.g., cu118 or cu121).
+After installing the appropriate GPU build, all scripts will automatically use the GPU if available.
+
+### Prerequisites
+```bash
+pip install -r requirements.txt
+```
 
 ### 1. Latent Trajectory Convergence (LLMs)
 
