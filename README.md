@@ -107,6 +107,14 @@ python exp_safety.py
 
 ---
 
+## ⚖️ Ethical Use & Safety
+
+MAP is a theoretical framework for visualization and alignment analysis. It is **not** intended for behavioral manipulation or bypassing AI safety guardrails.
+
+Please review our full **[Ethical Use & Safety Disclaimer](ETHICS.md)** before using or extending this protocol.
+
+---
+
 ## 🔧 MAP Ecosystem
 
 MAP is accompanied by two official toolkits demonstrating its practical use.
