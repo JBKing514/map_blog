@@ -2,7 +2,7 @@
 
 ### A Unified Geometric Standard for Complex System Dynamics
 
-[![Standard Version](https://img.shields.io/badge/MAP%20Spec-v1.0.0-orange)](https://doi.org/10.5281/zenodo.18091447) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18091447.svg)](https://doi.org/10.5281/zenodo.18091447) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Standard Version](https://img.shields.io/badge/MAP%20Spec-v1.0.0-orange)](https://doi.org/10.5281/zenodo.18091447) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18091447.svg)](https://doi.org/10.5281/zenodo.18091447) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![MAP LLM Toolkit](https://img.shields.io/badge/MAP%20LLM%20Toolkit-v0.1-blue)](https://github.com/JBKing514/map_llm_toolkit) [![MAP ComfyUI](https://img.shields.io/badge/MAP%20ComfyUI-v0.2-blue)](https://github.com/JBKing514/map_comfyui)
 
 <p align="center">
   <img src="static/images/MAP_LOGO.png" width="800" alt="MAP Protocol Architecture">
@@ -45,6 +45,7 @@ To demonstrate the universality of MAP, we provide official reference implementa
 * **Role:** An L4-Interface implementation for visualizing reasoning convergence and safety topology in Llama/Qwen models.
 * **Key Feature:** Visualizes the "Thinking Process" as a converging funnel.
 * 👉 **[Go to Repository](https://github.com/JBKing514/map_llm_toolkit)**
+* 👉 **[Check Ralated Paper](https://doi.org/10.5281/zenodo.17900444)**
 
 ### 2. Generative Latents (Diffusion)
 **Project:** `MAP-ComfyUI`
