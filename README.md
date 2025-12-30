@@ -1,68 +1,66 @@
 # The Manifold Alignment Protocol (MAP)
 
-### A Geometric Framework for Analyzing Convergence and Alignment in Complex Systems
+### A Self-Iterable Geometric Framework for Cross-System Cognitive Convergence
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17900444.svg)](https://doi.org/10.5281/zenodo.17900444)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![MAP LLM Toolkit](https://img.shields.io/badge/MAP%20LLM%20Toolkit-v0.1-blue)](https://github.com/JBKing514/map_llm_toolkit)
-[![MAP ComfyUI](https://img.shields.io/badge/MAP%20ComfyUI-v0.2-blue)](https://github.com/JBKing514/map_comfyui)
 
----
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18091447.svg)](https://doi.org/10.5281/zenodo.18091447) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Toolkit](https://img.shields.io/badge/MAP%20LLM%20Toolkit-v0.1-blue)](https://github.com/JBKing514/map_llm_toolkit) [![Toolkit](https://img.shields.io/badge/MAP%20ComfyUI-v0.2-blue)](https://github.com/JBKing514/map_comfyui)
+
+
+<p align="center">
+  <img src="static/images/MAP_LOGO.png" width="800" alt="MAP Protocol Visualization">
+</p>
 
 ## 🌌 Overview
 
-**The Manifold Alignment Protocol (MAP)** is a geometric analysis framework for studying how complex systems—such as large language models, diffusion models, or physical measurement pipelines—**converge, stabilize, and align** under iterative processes.
+**MAP (Manifold Alignment Protocol)** is a geometric standard for describing how heterogeneous cognitive systems—whether biological or artificial—converge toward shared conceptual structures. 
 
-Rather than focusing on model internals or task-specific metrics, MAP treats system behavior as **trajectories on a latent manifold**, enabling:
+By modeling reasoning as potential-driven flows on high-dimensional Riemannian manifolds, MAP provides a unified interface to visualize:
+- **Cognitive Convergence:** How diverse prompts collapse into stable attractor wells.
+- **Safety Topology:** The geometric distinction between "hard" refusal boundaries and "soft" adaptive guidance.
+- **Cross-Domain Isomorphism:** A common language to translate between physics, AI dynamics, and cognitive science.
 
-- Visualization of convergence and divergence
-- Quantification of stability and alignment
-- Comparison across heterogeneous systems
-- Geometry-based parameter optimization
+## 🧪 Key Findings
 
-MAP is designed as a **protocol**, not a fixed model: its mathematical substrate can be replaced or approximated depending on performance and application constraints.
+### 1. Geometric Convergence (The "Funnel" Effect)
+Using prompt-annealing on open-weights LLMs (Llama-3, Qwen), we observe that reasoning trajectories naturally converge into shared attractor basins, validating the MAP convergence hypothesis.
 
----
+<p align="center">
+  <img src="static/images/MAP_PCA.png" width="800" alt="Geometric Convergence of Llama-3 and Qwen">
+</p>
 
-## 🔑 Core Ideas
+### 2. Topological Safety Signatures
+MAP reveals the hidden geometry of AI safety: **Adaptive Mode**(guidance) shows a stable U-turn that redirects the reasoning path away from danger, while **Rigid Mode**(hard refusal) exhibits an inelastic crash into a boundary and ends immediately.
 
-- **Trajectory-Based Analysis**  
-  System behavior is modeled as a sequence of latent states evolving over time.
+<p align="center">
+  <img src="static/images/MAP_SECURE.png" width="800" alt="Safety Curvature Analysis">
+</p>
 
-- **Geometric Convergence**  
-  Stable systems exhibit contraction toward attractor regions; unstable systems display oscillation or fragmentation.
+### 3. Architecture Analysis: The "Thinking Style"(Coming in v2)
+MAP metric $\Delta A$ reveals distinct cognitive styles. Llama-3 discriminates semantics early (Layer 5), while Qwen-2.5 maintains a high-abstraction 'superposition' state until deep layers (Layer 20), correlating with its reasoning-heavy architecture.
 
-- **Protocol Modularity**  
-  MAP separates geometry (L1/L2) from interpretation and metrics (L3/L4), enabling fast approximations without breaking conceptual consistency.
+<p align="center">
+  <img src="static/images/MAP_ALINE.png" width="800" alt="Safety Curvature Analysis">
+</p>
 
-- **Cross-Domain Applicability**  
-  The same protocol applies to LLM reasoning, diffusion sampling, signal processing pipelines, and robotic sensing workflows.
+## 🏗️ Architecture
 
----
+MAP is designed as a four-layer protocol stack:
+1.  **L1 Substrate:** Riemannian/Information Geometry (The Math).
+2.  **L2 Dynamics:** Overdamped Langevin Diffusion (The Physics).
+3.  **L3 Protocol:** Alignment primitives (Attractors, Barriers).
+4.  **L4 Interface:** The cognitive UI metaphors (Wells, Slopes).
 
-## 🏗️ MAP Protocol Stack
+This decoupled architecture allows for **Self-Iterability**: the mathematical kernel can be upgraded without breaking the intuitive interface layer.
 
-MAP is structured as a four-layer architecture:
+## ⚖️ Ethical Use & Safety
 
-1. **L1 — Substrate**  
-   Latent space geometry (Riemannian, information-geometric, or Euclidean approximation)
+MAP is a theoretical framework for visualization and alignment analysis. It is **not** intended for behavioral manipulation or bypassing AI safety guardrails.
 
-2. **L2 — Dynamics**  
-   Iterative update rules (e.g., diffusion, optimization, sampling)
+Please review our full **[Ethical Use & Safety Disclaimer](ETHICS.md)** before using or extending this protocol.
 
-3. **L3 — Protocol Primitives**  
-   Attractors, barriers, alignment scores, convergence metrics
+## 💻 Quick Start: Run the Experiment
 
-4. **L4 — Interface**  
-   Human-interpretable representations (plots, scores, diagnostics)
-
-This separation enables **self-iterability**: the underlying math can evolve without changing how users interpret results.
-
----
-
-## 🧪 Reference Experiments
-
-We provide the Python scripts in `experiments` folder to validate the MAP's concept. You can reproduce these results on a single consumer GPU (e.g., RTX 3090/4090/5090), CPU-only will also work but slower.
+We provide the exact Python scripts in `experiments` folder which used to generate the figures above. You can reproduce these results on a single consumer GPU (e.g., RTX 3090/4090/5090), CPU-only will also work but slower.
 
 **Note:**
 This project installs the CPU version of PyTorch by default.
@@ -74,116 +72,96 @@ After installing the appropriate GPU build, all scripts will automatically use t
 pip install -r requirements.txt
 ```
 
-### 1. Latent Trajectory Convergence (LLMs)
-
-- Extracts hidden states from open-weight LLMs
-- Projects trajectories using PCA
-- Visualizes contraction into attractor regions
-
+### 1. Reproduce Convergence Plot (Figure 3)
+This script downloads Llama-3 and Qwen models, extracts hidden states for "Justice" prompts, and visualizes the trajectory convergence using PCA.
 ```bash
 python exp_convergence.py
 ```
+*Output: `convergence_dual_model.png`*
 
-### 2. Semantic Alignment Across Layers
-
-- Computes layer-wise alignment metrics
-- Compares tight vs. sparse semantic clusters
-- Reveals architecture-dependent folding depth
-
+### 2. Architecture Analysis: Semantic Folding (Figure 4)
+This script quantifies the **Layer-wise Alignment Score ($A$)** to visualize how different architectures compress meaning.
+* It compares "Tight" (paraphrased) vs. "Sparse" (random) semantic clusters.
+* **Key Insight:** It reveals that Qwen-2.5 exhibits **"Delayed Folding"** (maintaining high-dimensional superposition until deep layers), whereas Llama-3 collapses semantics early.
 ```bash
 python exp_alignment.py
 ```
+*Output: `alignment_delta_profile.png`*
 
-### 3. Safety Topology Diagnostics
 
-- Compares rigid vs. adaptive safety behaviors
-- Analyzes curvature and termination geometry
-
+### 3. Reproduce Safety Topology Plot (Figure 5)
+This script simulates "Rigid" vs. "Adaptive" safety system prompts and measures the geometric curvature of the reasoning path under an adversarial prompt.
 ```bash
-python exp_safety.py
+python exp_convergence.py
 ```
+*Output: `safety_plot.png`*
 
-> These scripts are provided as **reproducible references**, not production benchmarks.
+> **Note:** These scripts are provided as a static reference implementation to support the paper's findings.They are released "as-is" and are not intended for production use. Model weights are downloaded automatically from Hugging Face (using non-gated versions where possible).
 
----
+## 🔧 MAP Ecosystem: Official Implementations
 
-## ⚖️ Ethical Use & Safety
+To demonstrate the universality of the Manifold Alignment Protocol across different cognitive substrates (LLMs vs. Diffusion), we provide two official toolkits:
 
-MAP is a theoretical framework for visualization and alignment analysis. It is **not** intended for behavioral manipulation or bypassing AI safety guardrails.
+### 1. For Language Models: MAP-LLM-Toolkit
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18091447.svg)](https://doi.org/10.5281/zenodo.17900444)
+The experimental scripts used in this paper have been packaged into a clean and modular Python API.
 
-Please review our full **[Ethical Use & Safety Disclaimer](ETHICS.md)** before using or extending this protocol.
+This toolkit provides:
+- Hidden-state extraction utilities  
+- PCA projection and trajectory visualization  
+- Semantic Alignment through layer-wise alignment metrics
+- Safety topology analysis (rigid vs. adaptive modes)  
+- Reproducible examples for extending MAP-based experiments  
 
----
+👉 **Repository: [map_llm_toolkit](https://github.com/JBKing514/map_llm_toolkit)**
 
-## 🔧 MAP Ecosystem
+### 2. For Diffusion Models: MAP-ComfyUI
 
-MAP is accompanied by two official toolkits demonstrating its practical use.
+To validate MAP's applicability to continuous latent dynamics, we developed a geometric "Vector Network Analyzer" for Stable Diffusion workflows.
 
-### 🔹 MAP-LLM-Toolkit
+**Why use this?** It turns "Prompt Engineering" into "Prompt Engineering" (literally).
+Instead of guessing CFG/Steps, let the geometry decide.
 
-A Python API for applying MAP to language models:
+⚠️ **Note on Mathematical Approximation:** This node implements a performance-optimized variant of the MAP framework designed for real-time interaction. While the original MAP theory utilizes Riemannian geometry for precise manifold analysis, this tool employs Euclidean approximations and Random Projections to ensure zero-latency feedback during image generation. This demonstrates the modularity of the MAP protocol: the Substrate Layer (L1) can be swapped for speed without compromising the utility of the Protocol Layer (L3) alignment metrics.
 
-- Hidden-state extraction
-- Trajectory projection
-- Alignment metrics
-- Safety topology analysis
+This custom node suite translates MAP principles into a practical engineering tool:
+* **Latent Trajectory Plotting:** Visualizes the "geometry of generation" in real-time. See if your prompt is "struggling" or "converging".
+* **Convergence Metrics (Q-Score):** A mathematically derived quality score based on attractor stability.
+* **Auto-Tuner (GPU Saver):** An automated optimization engine (Hill Climbing) that finds the **optimal** Step/CFG/Schechuler settings. **Stop wasting compute on over-baking images.**
 
-👉 https://github.com/JBKing514/map_llm_toolkit
+👉 **Repository: [map_comfyui](https://github.com/JBKing514/map_comfyui)**
 
----
-
-### 🔹 MAP-ComfyUI (Diffusion Models)
-
-A geometry-based analysis and auto-tuning system for Stable Diffusion workflows.
-
-Features include:
-- Real-time latent trajectory visualization
-- Convergence-based quality scoring (Q-score)
-- Automatic optimization of Steps / CFG / Scheduler
-- Early stopping to reduce wasted compute
-
-⚠️ **Performance Note**  
-For interactive use, this implementation employs Euclidean approximations and random projections instead of full Riemannian geometry. This trade-off prioritizes speed while preserving protocol semantics.
-
-👉 https://github.com/JBKing514/map_comfyui
+Contributions of any form (features, experiments, visualization modules, discussions) are highly appreciated.
 
 ---
+
+## 📂 Classified Archives (Lore)
+
+> *Access restricted to Bridges Personnel / Level 9 Clearance.*
+
+For those interested in the theoretical intersections between MAP and the **Chiral Network physics** described in *Death Stranding*, we have declassified the following files:
+
+* **[ENTER THE ARCHIVES](https://jbking514.github.io/map_blog/ds_map/ds.html)**
 
 ## 📧 Contact
 
-**Yunchong Tang**  
-Faculty of Engineering, Tohoku Institute of Technology  
+For processed trajectory data, theoretical discussions, or collaboration inquiries regarding the Manifold Alignment Protocol, please contact the author directly:
+
+**Yunchong Tang**
+
+*Faculty of Engineering, Tohoku Institute of Technology*
 
 Email: `d232901@st.tohtech.ac.jp`
 
----
-
-## 📖 Citation
-
-If you use MAP or its associated tools, please cite:
-
-```bibtex
+ ## Citation
+ If you use MAP or its toolkits in your research, please cite:
+ ```bibtex
 @article{tang2025map,
-  title   = {The Manifold Alignment Protocol (MAP): A Self-Iterable Geometric Framework for Cross-System Cognitive Convergence},
-  author  = {Tang, Yunchong},
-  journal = {Zenodo},
-  year    = {2025},
-  doi     = {10.5281/zenodo.17900444},
-  url     = {https://doi.org/10.5281/zenodo.17900444}
+  title={The Manifold Alignment Protocol (MAP): A Self-Iterable Geometric Framework for Cross-System Cognitive Convergence},
+  author={Tang, Yunchong},
+  journal={Zenodo},
+  year={2025},
+  doi={10.5281/zenodo.17900444},
+  url={https://doi.org/10.5281/zenodo.17900444}
 }
-```
-
----
-
-## 🤝 Contributions
-
-Contributions are welcome in the form of:
-- New case studies
-- Visualization modules
-- Metric refinements
-- Cross-domain applications
-
----
-
-*MAP is an evolving research protocol.  
-Its goal is not to replace domain expertise, but to provide a shared geometric language for reasoning about convergence and alignment.*
+ ```

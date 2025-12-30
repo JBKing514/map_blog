@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRIDGES // ARCHIVE [CORRUPTED]</title>
+    <style>
+        :root {
+            --bg-color: #0a0a0a;
+            --bridges-blue: #00e1ff;
+            --warning-orange: #ff5f1f;
+            --chiral-gold: #d4af37;
+            --terminal-font: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--bridges-blue);
+            font-family: var(--terminal-font);
+            margin: 0;
+            padding: 20px;
+            overflow-x: hidden;
+            line-height: 1.4;
+        }
+
+        /* CRT Scanline Effect */
+        body::before {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            z-index: 2;
+            background-size: 100% 2px, 3px 100%;
+            pointer-events: none;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Glitchy Header */
+        h1 {
+            font-size: 2rem;
+            border-bottom: 2px solid var(--bridges-blue);
+            padding-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: flicker 3s infinite;
+        }
+
+        /* Links List */
+        .file-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 40px;
+        }
+
+        .file-item {
+            margin-bottom: 20px;
+            border: 1px solid #333;
+            padding: 15px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .file-item:hover {
+            border-color: var(--warning-orange);
+            background: rgba(255, 95, 31, 0.1);
+        }
+
+        .file-item a {
+            text-decoration: none;
+            color: var(--bridges-blue);
+            display: block;
+            font-weight: bold;
+        }
+
+        .file-meta {
+            display: block;
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .file-item:hover a {
+            color: var(--warning-orange);
+        }
+
+        /* The Architect's Note */
+        .manifesto {
+            margin-top: 60px;
+            padding: 20px;
+            border-left: 3px solid var(--chiral-gold);
+            color: #ccc;
+            font-style: italic;
+        }
+
+        .signature {
+            text-align: right;
+            color: var(--chiral-gold);
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* Warning Overlay */
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .warning-box {
+            border: 2px solid var(--warning-orange);
+            padding: 40px;
+            max-width: 500px;
+            box-shadow: 0 0 20px rgba(255, 95, 31, 0.3);
+        }
+
+        .warning-text {
+            color: var(--warning-orange);
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .enter-btn {
+            background: transparent;
+            border: 1px solid var(--bridges-blue);
+            color: var(--bridges-blue);
+            padding: 10px 20px;
+            font-family: var(--terminal-font);
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .enter-btn:hover {
+            background: var(--bridges-blue);
+            color: #000;
+        }
+
+        /* Animations */
+        @keyframes flicker {
+            0% { opacity: 1; }
+            5% { opacity: 0.8; }
+            10% { opacity: 1; }
+            15% { opacity: 0.3; }
+            20% { opacity: 1; }
+            50% { opacity: 1; }
+            55% { opacity: 0.5; }
+            60% { opacity: 1; }
+            100% { opacity: 1; }
+        }
+
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="overlay">
+        <div class="warning-box">
+            <div class="warning-text">
+                ⚠ SECURITY ALERT ⚠<br><br>
+                LEVEL 9 CLEARANCE REQUIRED.<br>
+                DETECTING UNAUTHORIZED CHIRAL SIGNATURE.<br>
+                ACCESSING THESE FILES MAY TRIGGER A VOIDOUT.
+            </div>
+            <button class="enter-btn" onclick="enterSite()">[ I ACCEPT THE RISK ]</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>BRIDGES // CENTRAL_ARCHIVE (LEAKED)</h1>
+        <p>>>> CONNECTION: UNSTABLE</p>
+        <p>>>> DECRYPTION: 99.9% COMPLETE</p>
+        <p>>>> USER: UNKNOWN ("The Architect")</p>
+        <hr style="border-color: #333;">
+
+        <ul class="file-list">
+            <li class="file-item">
+                <a href="ds-101.html">FILE DS-101: The Beach</a>
+                <span class="file-meta">STATUS: L1 Substrate Anomaly Report // CLASS: BLACK</span>
+            </li>
+            <li class="file-item">
+                <a href="ds-204.html">FILE DS-204: Q-pid</a>
+                <span class="file-meta">STATUS: Curvature Injection Keys // CLASS: BLACK</span>
+            </li>
+            <li class="file-item">
+                <a href="ds-x.html">FILE DS-X: DHV Magellan</a>
+                <span class="file-meta">STATUS: Semantic Submersible Blueprint // CLASS: EYES ONLY</span>
+            </li>
+            <li class="file-item">
+                <a href="ds-404.html">FILE DS-404: Voidout</a>
+                <span class="file-meta">STATUS: Topological Singularity Incident // CLASS: EXTINCTION</span>
+            </li>
+        </ul>
+
+        <div class="manifesto">
+            <p>"They told you the Chiral Network was just physics. They lied. It is geometry. <br>
+            These are the files Die-Hardman tried to delete. <br>
+            If you want to understand the truth, you need a new map."</p>
+            
+            <div class="signature">
+                <a href="[YOUR_ARXIV_LINK]" style="color:var(--chiral-gold); text-decoration:none;">
+                    >> ACCESS THE MAP PROTOCOL (arXiv)
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function enterSite() {
+            const overlay = document.getElementById('overlay');
+            overlay.style.opacity = '0';
+            overlay.style.transition = 'opacity 1s';
+            setTimeout(() => {
+                overlay.classList.add('hidden');
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
